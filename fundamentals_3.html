@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Fundamentals</title>
+</head>
+<body>
+    <script>
+        
+        //--------------NORMAL FUNCTIONS
+
+        function add7 (num) {
+            return num+7;
+        }
+
+        function multiply (num1, num2) {
+            return num1*num2;
+        }
+
+        function capitalize (str) {
+            str = str.toLowerCase();
+            return str.charAt(0).toUpperCase() + str.substr(1);
+        }
+
+        function lastLetter (str) {
+            return str.charAt(str.length-1);
+        }
+
+        //--------------ARROW FUNCTIONS
+
+        /*
+
+        add7 = (num) => num+7;
+
+        multiply = (num1,num2) => num1*num2;
+
+        capitalize = (str) => {
+            str = str.toLowerCase();
+            return str.charAt(0).toUpperCase() + str.substr(1);
+        }
+
+        lastLetter = (str) => str.charAt(str.length-1);
+        
+        */
+
+        console.log("add7 Function: " + add7(2));
+        console.log("multiply Function: " + multiply(3,5));
+        console.log("capitalize Function: " + capitalize("oNLY ThE fIrST lEtteR Is capitaLIZED"));
+        console.log("lastLetter Function: " + lastLetter("Only the LAST letter will show"));
+
+    </script>
+</body>
+</html>
